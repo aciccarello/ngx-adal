@@ -4,7 +4,7 @@
   "description": "Use Azure AD Library - ADAL in Angular",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/straach/angular2-adal.git"
+    "url": "git+https://github.com/straach/ngx-adal.git"
   },
   "keywords": [
     "angular",
@@ -20,9 +20,9 @@
   "author": "Achim Strauss",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/straach/angular2-adal/issues"
+    "url": "https://github.com/straach/ngx-adal/issues"
   },
-  "homepage": "https://github.com/straach/angular2-adal#readme",
+  "homepage": "https://github.com/straach/ngx-adal#readme",
   "engines": {
     "node": ">=5.0.0"
   },
