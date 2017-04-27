@@ -27,7 +27,8 @@
     "node": ">=5.0.0"
   },
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "install": "gulp"
   },
   "dependencies": {
   "@angular/common": "^4.0.0",
