@@ -1,34 +1,33 @@
 {
   "name": "ngx-adal",
   "version": "0.3.0",
-  "description": "Use Azure AD Library - ADAL in Angular X",
+  "description": "Use Azure AD Library - ADAL in Angular",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sureshchahal/angular2-adal.git"
+    "url": "git+https://github.com/straach/ngx-adal.git"
   },
   "keywords": [
-    "angular2",
-    "ng2",
+    "angular",
+    "ng",
     "adal",
     "azure",
     "ad",
-    "angular2-adal",
-    "ng2-adal",
-    "adal-angular2",
-    "adal-ng2"
+    "angular-adal",
+    "ngx-adal",
+    "adal-angular",
+    "adal-ngx"
   ],
-  "author": "Suresh Chahal",
+  "author": "Achim Strauss",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sureshchahal/angular2-adal/issues"
+    "url": "https://github.com/straach/ngx-adal/issues"
   },
-  "homepage": "https://github.com/sureshchahal/angular2-adal#readme",
+  "homepage": "https://github.com/straach/ngx-adal#readme",
   "engines": {
     "node": ">=5.0.0"
   },
   "scripts": {
-    "gulp": "gulp",
-    "install": "gulp"
+    "gulp": "gulp"
   },
   "dependencies": {
   "@angular/common": "^4.0.0",
