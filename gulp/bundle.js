@@ -12,14 +12,14 @@ const bundleConfig = {
         path.join('.', 'node_modules', '@angular', '*', 'package.json')
     ],
     paths: {
-        'ng2-adal/*': '*',
+        'ngx-adal/*': '*',
         '@angular/*': './node_modules/@angular/*',
         'adal-angular': './node_modules/adal-angular/lib/adal.js',
         '*': './node_modules/*'
     },
     packages: {
         '@angular/core': {
-            main: 'index.js',
+            main: 'bundles/core.umd.js',
             defaultExtension: 'js'
         },
         '@angular/compiler': {
@@ -27,16 +27,16 @@ const bundleConfig = {
             defaultExtension: 'js'
         },
         '@angular/common': {
-            main: 'index.js',
+            main: 'bundles/common.umd.js',
             defaultExtension: 'js'
         },
         '@angular/platform-browser': {
-            main: 'index.js',
+            main: 'bundles/platform-browser.umd.js',
             defaultExtension: 'js'
         },
 
-        '@angular/http' : {
-            main: 'index.js',
+        '@angular/http': {
+            main: 'bundles/http.umd.js',
             defaultExtension: 'js'
         },
         rxjs: {
@@ -48,7 +48,8 @@ const bundleConfig = {
 
 function bundle(moduleName, moduleBundleName, minify, done) {
     const outputConfig = {
-        sourceMaps: true, minify
+        sourceMaps: true,
+        minify
     };
     const builder = new Builder(bundleConfig);
     const outputFile =
@@ -61,11 +62,11 @@ function bundle(moduleName, moduleBundleName, minify, done) {
 }
 
 gulp.task('bundle:cjs', ['scripts:cjs'], (done) => {
-    bundle('ng2-adal/core', 'ng2-adal', false, done);
+    bundle('ngx-adal/core', 'ngx-adal', false, done);
 });
 
 gulp.task('bundle:cjs:min', ['scripts:cjs'], (done) => {
-    bundle('ng2-adal/core', 'ng2-adal', true, done);
+    bundle('ngx-adal/core', 'ngx-adal', true, done);
 });
 
 gulp.task('bundle', ['bundle:cjs', 'bundle:cjs:min']);
