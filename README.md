@@ -1,4 +1,4 @@
-# ng2-adal
+# ngx-adal
 
 To do authentication against Microsoft Windows Azure AD, using the Microsoft ADAL library underneath. Note this library is extracted from the <b>adal-angular</b> package and forked from https://github.com/sureshchahal/angular2-adal.
 
